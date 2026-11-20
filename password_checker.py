@@ -15,8 +15,8 @@ COMMON_PASSWORDS = {
     "letmein",
     "welcome",
     "iloveyou",
-    "012468"
-    "013579"
+    "012468",
+    "013579",
 }
 
 
@@ -82,7 +82,7 @@ def check_password_strength(password):
         score -= 15
         issues.append("Avoid keyboard or alphabetic sequences")
 
-    if re.search(r"(password|admin|login|user|name)", password, re.IGNORECASE):
+    if re.search(r"(password|admin|login)", password, re.IGNORECASE):
         score -= 15
         issues.append("Avoid obvious words like password or admin")
 
