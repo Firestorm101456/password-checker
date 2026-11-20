@@ -1,3 +1,5 @@
+# Password Checker
+
 import re
 import tkinter as tk
 from tkinter import ttk
